@@ -1,0 +1,141 @@
+*{
+  /* font-family: "Montserrat", sans-serif !important ; */
+}
+#banner {
+  background-image: url('/assets/images/test.png');
+  background-repeat: no-repeat;
+  width: 100% !important;
+  height: 750px;
+}
+
+.hd_name {
+  font-family: cursive !important;
+}
+
+.banner_words {
+  color: rgb(255, 255, 255);
+  font-family: "Gloria Hallelujah", cursive !important;
+  /* font-family: "Matemasie", sans-serif; */
+  
+  padding-top: 460px;
+  padding-left: 2%;
+}
+
+.my_name {
+  font-size: 40px;
+  font-weight: bolder !important;
+  color: rgb(255, 208, 0);
+  margin-left: 2%;
+}
+
+.my_aim {
+  font-size: 40px;
+  margin-left: 3%;
+}
+
+.distance_logo a {
+  padding-left: 20px !important;
+}
+
+.footer_head {
+  color: white;
+}
+
+/* Typing effect */
+.area_heading {
+  font-family: "Montserrat", sans-serif !important ;
+  
+  text-align: center;
+  font-family: cursive;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  /* Blinking caret effect */
+}
+
+/* @keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+} */
+
+/* .blink {
+  animation: blink-caret 0.75s step-end infinite;
+} */
+
+.carousel_set {
+  height: 400px;
+  width: 70%;
+}
+
+
+.area_heading2 {
+  font-family: "Montserrat", sans-serif !important ;
+
+  text-align: center;
+  font-family: cursive;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  /* Blinking caret effect */
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.blink {
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.carousel_set {
+  height: 400px;
+  width: 70%;
+}
+.wrk_heading{
+  margin-left: 20%;
+  font-size: 30px;
+  font-family:monospace
+}
+.size{
+  height: 300px;
+  width:75%;
+
+}
+.card{
+  margin-left: 70px;
+  margin-top: 5px;
+
+}
+.img_card{
+  border-radius: 30px;
+}
+
+.developer{
+  
+  font-family: cursive !important;
+  font-size: 20px;
+  margin-left: 150px;
+}
+
+#footer{
+  margin-top: 20px;
+}
+/* christo.v_mca24-26
+T6ebP4E6 */
+.font_change{
+  font-family: "Montserrat", sans-serif;
+  align-self:center !important ;
+}
+.heading_space{
+  width: 100%;
+ height: 60px;
+}
