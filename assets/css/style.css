@@ -1,14 +1,33 @@
 /* christo.v_mca24-26
 T6ebP4E6 */
 
-*{
+
+/* ---------------------------------------Home page css------------------------------------ */
+* {
   /* font-family: "Montserrat", sans-serif !important ; */
 }
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#navbar {
+  padding-bottom: 74px;
+}
+
 #banner {
   background-image: url('/assets/images/test.png');
   background-repeat: no-repeat;
   width: 100% !important;
   height: 750px;
+
+}
+
+#home_cards {
+  background: linear-gradient(90deg, #585a58, #292325, #3a3a3e, #1f282b, #e0e4e2);
+  color: white;
 }
 
 .hd_name {
@@ -19,7 +38,7 @@ T6ebP4E6 */
   color: rgb(255, 255, 255);
   font-family: "Gloria Hallelujah", cursive !important;
   /* font-family: "Matemasie", sans-serif; */
-  
+
   padding-top: 460px;
   padding-left: 2%;
 }
@@ -46,8 +65,8 @@ T6ebP4E6 */
 
 /* Typing effect */
 .area_heading {
-  font-family: "Montserrat", sans-serif !important ;
-  
+  font-family: "Montserrat", sans-serif !important;
+
   text-align: center;
   font-family: cursive;
   font-size: 2em;
@@ -59,15 +78,6 @@ T6ebP4E6 */
   /* Blinking caret effect */
 }
 
-/* @keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
-} */
-
-/* .blink {
-  animation: blink-caret 0.75s step-end infinite;
-} */
 
 .carousel_set {
   height: 400px;
@@ -76,13 +86,13 @@ T6ebP4E6 */
 
 
 .area_heading2 {
-  font-family: "Montserrat", sans-serif !important ;
+  font-family: "Montserrat", sans-serif !important;
 
   text-align: center;
   font-family: cursive;
   font-size: 2em;
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid black;
@@ -103,59 +113,447 @@ T6ebP4E6 */
   height: 400px;
   width: 70%;
 }
-.wrk_heading{
+
+.wrk_heading {
   margin-left: 20%;
   font-size: 30px;
-  font-family:monospace
+  font-family: monospace
 }
-.size{
+
+.size {
   height: 300px;
-  width:75%;
+  width: 75%;
 
 }
-.card{
+
+.card {
   margin-left: 70px;
   margin-top: 5px;
 
 }
-.img_card{
+
+.img_card {
   border-radius: 30px;
 }
 
-.developer{
-  
+.developer {
+
   font-family: cursive !important;
   font-size: 20px;
   margin-left: 150px;
 }
 
-#footer{
+#footer {
   margin-top: 20px;
 }
 
-.font_change{
+.font_change {
   font-family: "Montserrat", sans-serif;
-  align-self:center !important ;
+  align-self: center !important;
 }
-.heading_space{
+
+.heading_space {
   width: 100%;
- height: 60px;
+  height: 60px;
 }
-.round_images{
- border-radius: 70%;
+
+.round_images {
+  border-radius: 70%;
 }
-.about_data{
+
+/* ---------------------------------------about page css------------------------------------ */
+
+.about_data {
   display: flex;
 }
-#about{
+
+.about_writing {
+  color: rgba(255, 255, 255, 0.784);
+  font-family: "Matemasie", sans-serif;
+}
+
+.aboutImage {
+  width: 100%;
+  height: 500px;
+}
+
+.skill_header {
+  margin-left: 42%;
+  font-size: 35px;
+  font-size: 3em;
+  font-weight: bold;
+
+  /* Gradient Colors */
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #9b00ff, #00c3ff, #00ff6c);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+
+#about {
+  background: linear-gradient(90deg, #585a58, #292325, #3a3a3e, #1f282b, #000000);
+  padding-top: 1%;
+
+}
+
+.about_heading {
+  padding-left: 350px;
+  width: 100%;
+  font-size: 2px;
+  font-family: "Montserrat", sans-serif !important;
+
+  align-self: center !important;
+  font-size: 3em;
+  font-weight: bold;
+
+  /* Gradient Colors */
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #ff5900, #ff0000, #00ff6c);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+
+.about_img_div {
+  width: 508%;
+}
+
+.card-container_about {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.card_about {
+  width: 180px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card_about:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #e49842, #f23b3b);
+  color: white;
+}
+
+.card-icon_about {
+  font-size: 40px;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.card-title_about {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-text_about {
+  font-size: 14px;
+  color: #555;
+}
+
+#skills {
+  background: linear-gradient(90deg, #585a58, #292325, #3a3a3e, #1f282b, #4d5a5a);
+
+  margin-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 134px;
+}
+
+/* ---------------------------------------homw Town page css------------------------------------ */
+#town_sections {
+  margin-top: 40px;
+}
+
+.h1-twn {
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #ff5900, #ff0000, #00ff6c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+
+#twn-abt {
   margin-top: 10px;
-  background-color: aqua;
- 
+  background: linear-gradient(90deg, #585a58, #292325, #3a3a3e, #1f282b, #4d5a5a);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.738);
+  font-family: "Montserrat", sans-serif !important;
 }
-.about_heading{
-  margin-left: 400px;
-width: 100%;
+
+.twn-wrt {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
 }
-.about_img_div{
+
+.video1 {
   width: 100%;
 }
+
+.town_shorts {
+  display: flex;
+}
+
+.about_heads {
+  margin-left: 40%;
+  background-color: #00c3ff;
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #ff5900, #ff0000, #00ff6c);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+
+.about_head-twn {
+  font-size: 30px;
+  padding-left: 9%;
+  height: 60px;
+  background-color: #00c3ff;
+  background: linear-gradient(90deg, #585a58, #292325, #3a3a3e, #1f282b, #4d5a5a);
+  
+
+}
+
+.about_head h1 {
+  font-size: 35px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #ff5900, #ff0000, #00ff6c);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+
+#homeTown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  margin-top: 43px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(90deg, #3d3d42, #474648, #6c6c74, #1f282b, #787c7c);
+
+}
+
+.video-container {
+  width: 381px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-color: #000;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+video:hover {
+  cursor: pointer;
+}
+
+.vdo-div {
+  padding-top: 10px;
+}
+
+#google_map {
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+/* ----------------------------------------------contacts------------------------------------------ */
+#forms {
+  padding-top: 120px;
+  padding-bottom: 20px;
+  background: linear-gradient(90deg, #3d3d42, #474648, #6c6c74, #1f282b, #787c7c);
+}
+
+.form_heading {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-container {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 60%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #ff5900, #ff0000, #00ff6c);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #20c7de;
+  box-shadow: 0 0 8px rgba(32, 199, 222, 0.3);
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #20c7de;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #18b8d8;
+}
+
+button:disabled {
+  background-color: #c0e6ef;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  transform: scale(1.02);
+}
+
+button:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+
+
+/* ----------------------------------------------Gallery------------------------------------------ */
+
+#gallery {
+  background-color: #b9bbbb;
+  padding-top: 10px;
+}
+
+.image_height {
+  height: 600px !important;
+}
+
+.photo-container {
+  display: grid;
+  
+  grid-template-columns: repeat(4, 1fr);
+  
+  gap: 10px;
+ 
+  padding: 20px;
+}
+
+
+.photo-container img {
+  width: 100%;
+
+  height: 400px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .photo-container {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-container {
+    grid-template-columns: 1fr;
+    /* 1 column on very small screens */
+  }
+}
+
+/* ----------------------------------------------works------------------------------------------ */
+
+
+#my_works {
+  background: linear-gradient(90deg, #3d3d42, #474648, #6c6c74, #1f282b, #787c7c);
+  padding-top: 5px;
+}
+
+.photo-containers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;  
+  padding: 20px;
+}
+.photo-container :hover{
+  transform: scale(1.02) !important;
+}
+.photo-containers img {
+  height: 208px;
+  width: 82%;
+}
+

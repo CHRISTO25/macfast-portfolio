@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 </head>
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
+
 <body>
     <section id="navbar">
         <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
@@ -36,7 +38,7 @@
                         </li>
                         <li>
                             <a href="about.html"
-                                class="block py-2 px-3 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent">About
+                                class="block py-2 px-3 text-white text-gray-900 rounded md:bg-transparent  md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent">About
                                 me</a>
                         </li>
                         <li>
@@ -50,7 +52,7 @@
                         </li>
                         <li>
                             <a href="works.html"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Works</a>
+                                class="block py-2 px-3 md:text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Works</a>
                         </li>
                         <li>
                             <a href="contact.html"
@@ -62,6 +64,11 @@
         </nav>
     </section>
 
+    <section id="my_works">
+        <div>
+           <a href="https://github.com/CHRISTO25?tab=repositories"> <div class="photo-containers" id="photoContainer"></div></a>
+        </div>
+    </section>
 
     <section id="footer">
         <footer class="bg-black dark:bg-gray-900">
@@ -167,6 +174,32 @@
         </footer>
 
     </section>
-    
+
 </body>
+
+<script>
+    // Array of local photo paths
+    const photos = [
+        './assets/images/prjct2.jpeg',
+        './assets/images/prjct3.jpeg',
+        './assets/images/prjct4.jpeg',
+        './assets/images/prjct5.jpeg',
+        './assets/images/prjct6.jpeg',
+        './assets/images/prjct7.jpeg',
+        './assets/images/prjct8.jpeg',
+       
+
+    ];
+
+    const container = document.getElementById('photoContainer');
+
+    // Dynamically add each photo to the container
+    photos.forEach(photo => {
+        const img = document.createElement('img');
+        img.src = photo;
+        img.alt = 'Gallery Image';
+        container.appendChild(img);
+    });
+</script>
+
 </html>

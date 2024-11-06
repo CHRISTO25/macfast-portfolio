@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 </head>
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
+
 <body>
     <section id="navbar">
         <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
@@ -36,12 +38,12 @@
                         </li>
                         <li>
                             <a href="about.html"
-                                class="block py-2 px-3 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent">About
+                                class="block py-2 px-3 text-white text-gray-900 rounded md:bg-transparent  md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent">About
                                 me</a>
                         </li>
                         <li>
                             <a href="homeTown.html"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home
+                                class=" md:text-blue-700 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home
                                 Town
                             </a>
                         <li>
@@ -61,7 +63,77 @@
             </div>
         </nav>
     </section>
+    <hr style="border: 1px solid black; width: 100%;">
+    <section class="town_sections">
+        <div class="about_head-twn">
+            <h1 class="about_heads">Its All About Kottayam</h1>
+        </div>
+        <div class="vdo-div">
+            <iframe width="100%" height="700" src="https://www.youtube.com/embed/LF69rxQZSzc?si=jKUtqdYRdw0EGDah"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
 
+    <section id="twn-abt">
+        <div class="heading_space">
+            <h1 class="area_heading h1-twn" id="heading_twn"></h1>
+        </div>
+
+        <div class="twn-wrt">
+            <p>
+                Changanacherry, a historic town in Kottayam district, Kerala, boasts a rich cultural heritage and a
+                significant royal past. The town was once the seat of the Thekkumkur dynasty, a prominent royal family
+                in ancient Kerala. The remnants of this royal legacy can be seen in the form of several palaces and
+                historical sites scattered across the town.
+
+                One of the most prominent royal sites in Changanacherry is the Neerazhi Palace. This magnificent palace
+                served as the royal residence of the Thekkumkur kings until the 18th century. The palace complex, spread
+                over 1.23 acres, showcases exquisite architecture and intricate carvings. It is a testament to the
+                grandeur and opulence of the bygone era.
+
+                Another significant royal site is the Lakshmipuram Palace. This palace was built in the 19th century by
+                Maharani Lakshmi Bai of Travancore for her husband's family, the Koil Thampurans. The palace is known
+                for its beautiful architecture and serene surroundings. It is now a heritage site and attracts visitors
+                from all over the world.
+
+                Changanacherry's royal past has left an indelible mark on the town's culture and traditions. The town is
+                renowned for its rich cultural heritage, including its classical music and dance forms, traditional arts
+                and crafts, and vibrant festivals. The annual Pooram festival, held at the famous Thiruvanchikulam
+                temple, is a major cultural event that attracts thousands of devotees and tourists.
+
+                The town's strategic location on the banks of the Pampa River has also played a significant role in its
+                history. The river has been a vital trade route for centuries, connecting Changanacherry to other parts
+                of Kerala and beyond. The town's proximity to the backwaters has also made it a popular tourist
+                destination.
+
+                In conclusion, Changanacherry is a town steeped in history and culture. Its royal past, rich cultural
+                heritage, and scenic beauty make it a fascinating destination for tourists and history enthusiasts
+                alike.
+            </p>
+        </div>
+    </section>
+    <section id="homeTown">
+        <div class="video-container">
+            <video preload="none" muted src="/assets/videos/ktm2.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-container">
+            <video preload="none" muted src="/assets/videos/ktm1.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-container">
+            <video preload="none" muted src="/assets/videos/ktm.mp4" type="video/mp4"></video>
+        </div>
+    </section>
+
+    <section id="google_map">
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62973.61818989698!2d76.49611450959151!3d9.43445235474531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06260b6892c327%3A0x86c67c02aad04a0!2sChanganassery%2C%20Kerala!5e0!3m2!1sen!2sin!4v1729961003270!5m2!1sen!2sin"
+                width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
     <section id="footer">
         <footer class="bg-black dark:bg-gray-900">
@@ -167,6 +239,8 @@
         </footer>
 
     </section>
-    
+
 </body>
+<script src="/assets/js/style.js"></script>
+
 </html>
